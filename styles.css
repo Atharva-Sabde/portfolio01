@@ -78,7 +78,7 @@ nav ul li a {
   width: 200px;
 }
 
-/* Typewriter effect */
+/* Typewriter effect
 .line {
   position: relative;
   color: antiquewhite;
@@ -94,7 +94,7 @@ nav ul li a {
   transform: translateY(50%);
 }
 /* Animation */
-.anim-typwriter {
+/* .anim-typwriter {
   animation: typewriter 8s steps(100) 1s 1 normal both,
     blinkTextCursor 50ms steps(100) infinite normal;
 }
@@ -112,5 +112,41 @@ nav ul li a {
   }
   to {
     border-right-color: transparent;
+  }
+} */
+.text-typing {
+  margin-top: 250px;
+  padding: 20px 30px;
+  /* background: #f5f5f5; */
+  color: rgb(255, 255, 255);
+  background: transparent;
+  font-size: 35px;
+  font-family: monospace;
+  border-radius: 50px;
+}
+
+.text-typing p {
+  margin: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(45, end) forwards, blink 1s infinite;
+  transition-delay: 10s;
+  transition-delay: 100ms;
+}
+@keyframes typing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink {
+  0%,
+  100% {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid rgb(255, 255, 255);
   }
 }
