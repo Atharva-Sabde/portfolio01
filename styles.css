@@ -10,14 +10,15 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/inspiration-geometry.png");
 
   /* background-color: #001729;
-  background-image: url("https://www.transparenttextures.com/patterns/gplay.png");  */
+  background-image: url("https://www.transparenttextures.com/patterns/gplay.png"); */
 
   /* background-color: #001a42;
   background-image: url("https://www.transparenttextures.com/patterns/dark-wood.png"); */
 
-  background-size: repeat;
+  /* background-size: repeat; */
   margin: 0px;
   padding: 0px;
+  /* for animation */
 }
 
 ul {
@@ -77,48 +78,77 @@ nav ul li a {
   margin-right: 4rem;
   width: 200px;
 }
+/* ---------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 
-/* Typewriter effect
-.line {
-  position: relative;
-  color: antiquewhite;
-  top: 50%;
-  width: 16em;
-  margin-top: 300px;
-  margin-left: 200px;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: 280%;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  transform: translateY(50%);
+.wrapper,
+.static {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  color: beige;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-/* Animation */
-/* .anim-typwriter {
-  animation: typewriter 8s steps(100) 1s 1 normal both,
-    blinkTextCursor 50ms steps(100) infinite normal;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 24em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
+/* .wrapper {
+  
 } */
-.text-typing {
+
+.wrapper .static {
+  font-size: 60px;
+  font-weight: 400;
+  color: rgb(255, 153, 0);
+}
+
+.wrapper .dynamic {
+  margin-left: 15px;
+}
+.dynamic li {
+  list-style: none;
+  color: #d1cda6;
+  font-size: 60px;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+.dynamic li span {
+  position: relative;
+}
+.dynamic li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000b21;
+  border-left: 2px solid #fc6d6d;
+  animation: typing 4s steps(10) infinite;
+}
+
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 30px);
+  }
+  100% {
+    left: 0;
+  }
+}
+/* .text-typing {
   margin-top: 250px;
   padding: 20px 30px;
   /* background: #f5f5f5; */
-  color: rgb(255, 255, 255);
+/*  color: rgb(255, 255, 255);
   background: transparent;
   font-size: 35px;
   font-family: monospace;
@@ -149,4 +179,4 @@ nav ul li a {
   50% {
     border-right: 2px solid rgb(255, 255, 255);
   }
-}
+} */
