@@ -86,10 +86,13 @@ nav ul li a {
   /* margin-right: 0rem; */
   width: 90px;
 }
+
+/* -------------------------------------about image------------------------ */
+
 /* ----------------------------footer ----------------------------------- */
 .social ul {
   position: absolute;
-  top: 90%;
+  top: 88%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 0;
@@ -102,8 +105,8 @@ nav ul li a {
 }
 .social ul li .fa {
   color: #000000;
-  font-size: 30px;
-  line-height: 50px;
+  font-size: 25px;
+  line-height: 40px; /* subject to change */
   transition: 0.5s;
 }
 .social ul li .fa:hover {
@@ -112,10 +115,10 @@ nav ul li a {
 .social ul li a {
   position: relative;
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px; /* subject to change */
+  height: 40px;
   border-radius: 50%;
-  background-color: white;
+  background-color: #fefbd8;
   text-align: center;
   transition: 0.5s;
   transform: translate(0, 0px);
@@ -124,10 +127,10 @@ nav ul li a {
 .social ul li a:hover {
   transform: rotate(0deg) skew(0deg) translate(0, -10px);
 }
-.social ul li:nth-child(1) a:hover {
-  background-color: #3b5999;
+.social ul li a:hover {
+  background-color: #8fd124;
 }
-.social ul li:nth-child(2) a:hover {
+/* .social ul li:nth-child(2) a:hover {              for different colors 
   background-color: #55acee;
 }
 .social ul li:nth-child(3) a:hover {
@@ -138,6 +141,12 @@ nav ul li a {
 }
 .social ul li:nth-child(5) a:hover {
   background-color: #0077b5;
+} */
+.footer_text {
+  text-align: center;
+  word-wrap: inherit;
+  margin-top: 100px;
+  color: #d1cda6;
 }
 
 /* --------------------------Animation -------------------------------------------- */
