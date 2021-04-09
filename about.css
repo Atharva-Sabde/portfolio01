@@ -20,6 +20,8 @@ body {
 }
 .about {
   border: 2px solid wheat;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
   padding: 25px 25px 25px 25px;
   margin-top: 0px;
   margin-left: 200px;
