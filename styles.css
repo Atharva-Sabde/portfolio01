@@ -59,8 +59,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 55px;
-  background-color: #00537a;
-  background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+  background-color: #fefbd8;
+  /* background-image: url("https://www.transparenttextures.com/patterns/connected.png"); */
   /* background-color: #0f0a00;
   background-image: url("https://www.transparenttextures.com/patterns/tileable-wood-colored.png"); */
   /* background-color: #36486b; */
@@ -103,13 +103,9 @@ nav ul li a {
   padding: 8px;
   margin-top: 10px;
   margin-left: 650px;
-  margin-top : -180px;
+  margin-top: -180px;
   display: block;
 }
-
-
-
-
 
 /* ----------------------------footer ----------------------------------- */
 .social ul {
@@ -119,12 +115,12 @@ nav ul li a {
   transform: translate(-50%, -50%);
   padding: 0 0 0 0;
   margin-bottom: 10;
-  margin-top: 1000 ;
+  margin-top: 1000;
   display: flex;
 }
 .social ul li {
   list-style: none;
-  margin:  14px;
+  margin: 14px;
 }
 .social ul li .fa {
   color: #000000;
